@@ -34,13 +34,13 @@ INSERT INTO courses(course_name);
 VALUES('Placement Course'),('Interview Preparation Course'),('Aptitude'),('Resonning'),('Gamify');
 ----3.Get number problems solved in codekata by combinning the users.--------
 SELECT SUM(Problem_Solved)FROM codekata
----4.Display the number of company drives attend by a user---
-SELECT student_roll_no, count(distinct company_name) group by student_roll_no 
+---4.Display the number of company drives attend by a user---               
+select Student_roll_no,count(company_name) from company_drives group by Student_roll_no;
 ---5.combine and display students_activate_courses and courses for a specific user groping them based on the course----
                    
 ----6.List all the Mentors---
-                   
+select * from mentors;
 -----7.List the number of students that are assigned for a mentor---
-                   
+select mentor_name,assigned_students from mentors;
            
                    
