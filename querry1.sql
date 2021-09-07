@@ -35,4 +35,6 @@ VALUES('Placement Course'),('Interview Preparation Course'),('Aptitude'),('Reson
 ----Get number problems solved in codekata by combinning the users.--------
 SELECT SUM(Problem_Solved)FROM codekata
 ---Display the number of company drives attend by a user---
-SELECT COUNT(*)                
+SELECT student_roll_no, count(distinct company_name) group by student_roll_no   
+----List all the Mentors---
+                   
