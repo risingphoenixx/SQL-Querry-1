@@ -1,4 +1,4 @@
-----Creating table----
+----1.Creating table----
 Create database db;
 use db;
 create table users(Name varchar(100),User_no int,User_email varchar(60));
@@ -10,7 +10,7 @@ create table company_drives(Student_roll_no int,Company_name varchar(50));
 create table mentors(Mentora_ID int,mentor_name varchar(70),Students_Assigned int,Student_Name Varchar(60));
 create table students_activated_courses(Student_roll_no int,Ongoing_course varchar(45),completed_course int);
 create table courses(course_name varchar(70));
----Insert 5 Rows of values in each table----
+---2.Insert 5 Rows of values in each table----
 INSERT INTO users(name,Student_Roll_no,User_email)
 VALUES('Rain Martin','87348','martin@gmail.com'),('Stephen Hardson','85349','stephen.hardsonn@gmail.com'),('Kochik Stephard','43628','chitav848@gmail.com'),('Gowchick S. Kandeson','37893','simon39@gmail.com'),
 ('H.landersiv','39203','landersiv@gmail.com');
@@ -32,9 +32,15 @@ INSERT INTO students_activated_courses(Student_roll_no,Ongoing_course,completed_
 VALUES('87348','Placement Course','2'),('85349','Interview Preparation Course','4'),('43628','Aptitude','2'),('37893','Resonning','3'),('39203','Gamify','6');
 INSERT INTO courses(course_name);
 VALUES('Placement Course'),('Interview Preparation Course'),('Aptitude'),('Resonning'),('Gamify');
-----Get number problems solved in codekata by combinning the users.--------
+----3.Get number problems solved in codekata by combinning the users.--------
 SELECT SUM(Problem_Solved)FROM codekata
----Display the number of company drives attend by a user---
-SELECT student_roll_no, count(distinct company_name) group by student_roll_no   
-----List all the Mentors---
+---4.Display the number of company drives attend by a user---
+SELECT student_roll_no, count(distinct company_name) group by student_roll_no 
+---5.combine and display students_activate_courses and courses for a specific user groping them based on the course----
+                   
+----6.List all the Mentors---
+                   
+-----7.List the number of students that are assigned for a mentor---
+                   
+           
                    
