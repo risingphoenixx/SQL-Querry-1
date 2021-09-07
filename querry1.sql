@@ -1,4 +1,4 @@
-----Creating table with some columns----
+----Creating table----
 Create database db;
 use db;
 create table users(Name varchar(100),User_no int,User_email varchar(60));
@@ -10,7 +10,7 @@ create table company_drives(Student_roll_no int,Company_name varchar(50));
 create table mentors(Mentora_ID int,mentor_name varchar(70),Students_Assigned int,Student_Name Varchar(60));
 create table students_activated_courses(Student_roll_no int,Ongoing_course varchar(45),completed_course int);
 create table courses(course_name varchar(70));
----Insert Rows in each table----
+---Insert 5 Rows of values in each table----
 INSERT INTO users(name,User_no,User_email)
 VALUES('Richard','23078','richard12@gmail.com'),('S.T Hanson','34783','shanson@gmail.com'),('Chitav','48383','chitav848@gmail.com'),('Simon','93039','simon39@gmail.com'),
 ('Lander Krisza','43950','kriszalander@gmail.com');
@@ -32,4 +32,5 @@ INSERT INTO students_activated_courses(Student_roll_no,Ongoing_course,completed_
 VALUES('87348','Placement Course','2'),('85349','Interview Preparation Course','4'),('43628','Aptitude','2'),('37893','Resonning','3'),('39203','Gamify','6');
 INSERT INTO courses(course_name);
 VALUES('Placement Course'),('Interview Preparation Course'),('Aptitude'),('Resonning'),('Gamify');
-
+----Get number problems solved in codekata by combinning the users.--------
+SELECT SUM(Problem_Solved)FROM codekata
