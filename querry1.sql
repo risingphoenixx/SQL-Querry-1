@@ -5,7 +5,7 @@ create table users(Name varchar(100),User_no int,User_email varchar(60));
 create table codekata(Student_Roll_No int,Problem_Solved int);
 create table attendance(Name Varchar(100),Student_roll_no int,Present_Days varchar(7),Absent_Days varchar (9));
 create table topics(Subject_name varchar(40), Topic_name varchar(40),total_problems int);
-create table tasks(Student_roll_no int,Subject_name varchar(40),Task_name int,Task_Complete varchar(3);
+create table tasks(Student_roll_no int,Subject_name varchar(40),Task_name varchar(45),Task_Complete varchar(3);
 create table company_drives(Student_roll_no int,Company_name varchar(50));
 create table mentors(Mentora_ID int,mentor_name varchar(70),Students_Assigned int,Student_Name Varchar(60));
 create table students_activated_courses(Student_roll_no int,Ongoing_course varchar(45),completed_course int);
