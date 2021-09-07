@@ -8,7 +8,7 @@ create table topics(Subject_name varchar(40), Topic_name varchar(40),total_probl
 create table tasks(Student_roll_no int,Subject_name varchar(40),Task_name int,Task_Complete varchar(3);
 create table company_drives(Student_roll_no int,Company_name varchar(50));
 create table mentors(Mentora_ID int,mentor_name varchar(70),Students_Assigned int,Student_Name Varchar(60));
-create table students_activated_courses(Student_roll_no int,courses_taken varchar(45),completed_course int);
+create table students_activated_courses(Student_roll_no int,Ongoing_course varchar(45),completed_course int);
 create table courses(course_name varchar(70));
 ---Insert Rows in each table----
 INSERT INTO users(name,User_no,User_email)
@@ -26,5 +26,10 @@ VALUES('43839','#C','Pointer','Yes'),('78473','Java','Array','No'),('84394','Pyt
 INSERT INTO company_drives(Student_roll_no,Company_name);
 VALUES('75844','CHUBB'),('87493','Walmart'),('83473','Microsoft'),('54437','EY'),('65487','Morgan Stanley');
 INSERT INTO  mentors(Mentora_ID,mentor_name,Students_Assigned,Student_Name);
-       
+VALUES('9122833','Kiwi Shwecoki','1','Rain Martin'),('9837672','Fransic Maledick','1','Stephen Hardson'),('9743682','Gerge Syndrine','1','Kochik Stephard'),('9287832','Andrew Stephanson','1','Gowchick S. Kandeson'),
+('9843728','Zig Hinson','1','H.landersiv');
+INSERT INTO students_activated_courses(Student_roll_no,Ongoing_course,completed_course);
+VALUES('87348','Placement Course','2'),('85349','Interview Preparation Course','4'),('43628','Aptitude','2'),('37893','Resonning','3'),('39203','Gamify','6');
+INSERT INTO courses(course_name);
+VALUES('Placement Course'),('Interview Preparation Course'),('Aptitude'),('Resonning'),('Gamify');
 
